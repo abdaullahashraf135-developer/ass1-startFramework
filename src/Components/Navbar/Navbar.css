@@ -1,0 +1,45 @@
+.sf-navbar {
+    background-color: #2C3E50;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+}
+
+.active {
+    background-color: #1ABC9C !important;
+    border-radius: 5px;
+}
+
+.sf-navbar .container-fluid {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.sf-logo {
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 32px!important;
+    line-height: 40px;
+}
+
+.sf-navlinks .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sf-navlinks .nav-link:active {
+    color: #e6f0ff;
+    background: #1ABC9C !important;
+}
+
+@media (max-width: 575.98px) {
+    .sf-navlinks .nav-link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}

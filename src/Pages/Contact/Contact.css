@@ -1,0 +1,86 @@
+.contact-page {
+    background: #ffffff;
+    min-height: calc(100vh - 140px);
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+.sf-divider .line {
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #212529;
+}
+
+.contact-form {
+    padding-top: 1rem;
+}
+
+.form-control.underline {
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 0;
+    padding: .65rem 0 .4rem 0;
+    background: transparent;
+    color: #222;
+}
+
+.form-control.underline:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom-color: #18a085;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.floating-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .18s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    color: #18a085;
+    font-weight: 600;
+}
+
+
+
+.form-control.underline:focus+.floating-label,
+.form-control.underline:not(:placeholder-shown)+.floating-label {
+    top: -0.8rem;
+    opacity: 1;
+    transform: none;
+    font-size: .85rem;
+}
+
+.text-teal {
+    color: #18a085;
+}
+
+.btn-teal {
+    background-color: #18a085 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-teal:hover {
+    background: #149274;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .contact-page {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .sf-divider .line {
+        width: 60px;
+    }
+}

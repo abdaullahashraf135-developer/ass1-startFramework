@@ -1,0 +1,13 @@
+.text-center i.display-1 {
+    font-size: 5rem;
+}
+
+@media (max-width: 576px) {
+    .text-center i.display-1 {
+        font-size: 3.5rem;
+    }
+}
+
+.vh-100 {
+    min-height: 100vh;
+}

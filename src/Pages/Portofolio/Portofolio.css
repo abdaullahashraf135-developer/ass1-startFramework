@@ -1,0 +1,160 @@
+    .portfolio-img img {
+        width: 110%;
+        height: 110%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .sf-divider .line {
+        width: 80px;
+        height: 4px;
+        background-color: #2c3e50;
+    }
+    
+    .sf-divider i {
+        color: #2c3e50;
+    }
+    
+    .sf-divider .line {
+        display: block;
+        width: 80px;
+        height: 3px;
+        background: #e9ecef;
+    }
+    
+    .card {
+        border: none;
+        border-radius: 15px;
+        color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .bg-card-1 {
+        background: #E57373;
+    }
+    
+    .bg-card-2 {
+        background: #4DB6AC;
+    }
+    
+    .bg-card-3 {
+        background: #212529;
+    }
+    
+    .card h5 {
+        margin: 0;
+        font-weight: 600;
+    }
+    
+    @media (max-width: 575.98px) {
+        .illustration {
+            width: 72px;
+            height: 72px;
+        }
+        .sf-divider .line {
+            width: 60px;
+        }
+    }
+    
+    .portfolio-item {
+        height: 260px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .bg-cabin {
+        background-color: #b44c63;
+    }
+    
+    .bg-cake {
+        background-color: #1fa4b6;
+    }
+    
+    .bg-circus {
+        background-color: #0b0b0b;
+    }
+    
+    .portfolio-img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(26, 186, 159, 0.7); 
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .portfolio-text {
+        position: absolute;
+        top: calc(50% - 10px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 1rem;
+        font-weight: normal;
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 2;
+        text-align: center;
+    }
+    
+    .portfolio-item:hover .overlay,
+    .portfolio-item:hover .portfolio-text {
+        opacity: 1;
+    }
+    
+    .portfolio-item:hover .portfolio-text {
+        font-size: 10rem;
+        font-weight: bold;
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .modal-content {
+        position: relative;
+        max-width: 500px;
+        max-height: 400px;
+        width: 500px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
